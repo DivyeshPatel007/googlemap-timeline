@@ -10,11 +10,6 @@ function Navigation() {
     const [showCalender, setShowCalender] = useState(false)
     const [value, onChange] = useState(new Date());
 
-
-
-
-
-
     function showCalendersHandler() {
         setShowCalender((prevState) => {
             return !prevState
