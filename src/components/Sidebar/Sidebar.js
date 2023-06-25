@@ -19,6 +19,7 @@ function Sidebar() {
   console.log(showUsers);
   return (
     <div className='sidebar' >
+    {showUsers &&   <div onClick={showUsersHandler} id="overlay"></div> }
 
       <div className="sidebar-header">
         <div className="img-container">
@@ -29,6 +30,14 @@ function Sidebar() {
         </div>
         {showUsers &&
           <ul className='sidebar-users'>
+            <li onClick={showUsersHandler}>Patel Devanshu</li>  
+            <li onClick={showUsersHandler}>Patel Bhavin</li>  
+            <li onClick={showUsersHandler}>Patel Priyanka</li>  
+            <li onClick={showUsersHandler}>Amit Singh</li>  
+            <li onClick={showUsersHandler}>Patel Devanshu</li>  
+            <li onClick={showUsersHandler}>Patel Devanshu</li>  
+            <li onClick={showUsersHandler}>Patel Devanshu</li>  
+            <li onClick={showUsersHandler}>Patel Devanshu</li>  
             <li onClick={showUsersHandler}>Patel Devanshu</li>  
           </ul>}
       </div>
