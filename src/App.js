@@ -2,15 +2,20 @@ import { Fragment } from "react";
 import "./App.scss"
 import Sidebar from "./components/Sidebar/Sidebar";
 import Map from "./components/Map/Map";
-
+import { MapContext, MapProvider } from "./Context";
 
 function App() {
   return (
     <Fragment>
+      <MapProvider>
+
         <div className="main-container">
-          <Sidebar/>
-          <Map/>
+          <Sidebar />
+          <Map />
+
         </div>
+      </MapProvider>
+
     </Fragment>
   );
 }
