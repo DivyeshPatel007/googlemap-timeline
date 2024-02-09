@@ -20,11 +20,13 @@ function Navigation() {
     const month = value.getMonth() + 1;
     const date = value.getDate();
     const dateFormat = `${year}-${month}-${date}`
+    console.log(dateFormat);
 
     return (
         <div className='navigation'>
             <button className='navigation-button' onClick={showCalendersHandler}>Select Date  <img src={calenderLogo} alt="" /> </button>
             <Calendar className={showCalender ? "navigation-calender active" : "navigation-calender"} onChange={onChange} value={value} />
+           
         </div>
     )
 }
